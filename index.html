@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alex Johnson - Portfolio</title>
+    <title>Rishabh Shan - Portfolio</title>
     <style>
         * {
             margin: 0;
@@ -315,12 +314,35 @@
             text-decoration: none;
             border-radius: 20px;
             margin-right: 10px;
+            margin-bottom: 8px;
             font-size: 0.9rem;
             transition: background 0.3s ease;
         }
 
         .project-link:hover {
             background: rgba(100, 255, 218, 0.2);
+        }
+
+        .project-main-links {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .main-link {
+            flex: 1;
+            text-align: center;
+            padding: 12px 20px;
+            background: linear-gradient(45deg, #64ffda, #4ecdc4);
+            color: #1a1a2e;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+
+        .main-link:hover {
+            transform: translateY(-2px);
         }
 
         /* Certifications Section */
@@ -340,7 +362,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
             gap: 30px;
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 0 auto;
         }
 
@@ -382,6 +404,22 @@
 
         .cert-content p {
             line-height: 1.6;
+        }
+
+        .cert-link {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 8px 16px;
+            background: rgba(100, 255, 218, 0.1);
+            color: #64ffda;
+            text-decoration: none;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            transition: background 0.3s ease;
+        }
+
+        .cert-link:hover {
+            background: rgba(100, 255, 218, 0.2);
         }
 
         /* Contact Section */
@@ -475,6 +513,10 @@
             .cert-icon {
                 justify-content: center;
             }
+            
+            .project-main-links {
+                flex-direction: column;
+            }
         }
     </style>
 </head>
@@ -499,7 +541,7 @@
     <section id="home" class="hero">
         <div class="hero-content">
             <h1>Rishabh Shan</h1>
-            <p>Full Stack Developer & Software Developer</p>
+            <p>Software Developer | Full-stack Web Developer</p>
             <a href="#contact" class="cta-button">Get In Touch</a>
         </div>
     </section>
@@ -509,11 +551,11 @@
         <div class="about-content">
             <div class="profile-img">👨‍💻</div>
             <div class="about-text">
-                <p>Hello! I'm Rishabh, a passionate full-stack developer and software developer with expertise in modern web technologies and data analysis. I specialize in creating efficient, scalable solutions and love turning complex problems into elegant code.</p>
+                <p>Hello! I'm Rishabh, a dedicated IT professional with a passion for innovation, seeking to leverage my technical skills and problem-solving abilities in challenging roles. I specialize in full-stack web development and software development using modern technologies.</p>
                 <br>
-                <p>My technical journey spans across multiple domains - from backend development with Python and Django to frontend excellence with React.js, and data analysis using advanced tools like Tableau and Power BI. I'm also well-versed in DevOps practices and cloud technologies.</p>
+                <p>My technical journey spans across multiple programming languages including C++, Python (Django, NumPy, Pandas), Java, and JavaScript (React.js, Node.js, Express.js). I have hands-on experience with databases like SQL, MongoDB, Redis, and data visualization tools like Tableau and Power BI.</p>
                 <br>
-                <p>When I'm not coding, you can find me exploring new algorithms, optimizing database queries, or working on innovative projects that bridge the gap between technology and real-world solutions. I believe in continuous learning and staying updated with the latest industry trends.</p>
+                <p>I am committed to continuous improvement and staying abreast of industry trends to drive successful project outcomes. When I'm not coding, you can find me exploring new algorithms, working on innovative projects, and solving complex problems with elegant solutions.</p>
             </div>
         </div>
     </section>
@@ -523,7 +565,7 @@
         <div class="skills-grid">
             <div class="skill-card">
                 <h3>Programming Languages</h3>
-                <p>C++ Programming, Python (Django), Java Programming, JavaScript (React.js, Node.js, Express.js)</p>
+                <p>C++ Programming, Python (Django, NumPy, Pandas), Java Programming, JavaScript (React.js, Node.js, Express.js)</p>
             </div>
             <div class="skill-card">
                 <h3>Web Technologies</h3>
@@ -544,18 +586,6 @@
         <h2>Featured Projects</h2>
         <div class="projects-grid">
             <div class="project-card">
-                <div class="project-img">📊</div>
-                <div class="project-content">
-                    <h3>Fitbit Fitness Tracker Analysis</h3>
-                    <p>Explored Fitbit data from 33 users over 30 days. Cleaned and processed data, extracted insights through visualizations (Matplotlib/Seaborn), and identified health behavior patterns like high sedentary time and step-calorie correlations.</p>
-                    <div class="project-links">
-                        <a href="javascript:void(0)" class="project-link">Python</a>
-                        <a href="javascript:void(0)" class="project-link">Jupyter</a>
-                        <a href="javascript:void(0)" class="project-link">Pandas</a>
-                    </div>
-                </div>
-            </div>
-            <div class="project-card">
                 <div class="project-img">🤖</div>
                 <div class="project-content">
                     <h3>CodeFlex AI</h3>
@@ -564,18 +594,46 @@
                         <a href="javascript:void(0)" class="project-link">Next.js</a>
                         <a href="javascript:void(0)" class="project-link">AI/ML</a>
                         <a href="javascript:void(0)" class="project-link">Computer Vision</a>
+                        <a href="javascript:void(0)" class="project-link">Vapi AI</a>
+                        <a href="javascript:void(0)" class="project-link">Gemini</a>
+                    </div>
+                    <div class="project-main-links">
+                        <a href="https://codeflex-ai-pi.vercel.app/" target="_blank" class="main-link">🔗 Live Demo</a>
+                        <a href="https://github.com/RishabhArt/Codeflex-AI/tree/main" target="_blank" class="main-link">📁 GitHub</a>
                     </div>
                 </div>
             </div>
             <div class="project-card">
-                <div class="project-img">📚</div>
+                <div class="project-img">🍽️</div>
                 <div class="project-content">
-                    <h3>BookWorm</h3>
-                    <p>A mobile application built with React Native and Expo that helps users find books to read based on other people's suggestions and reviews, creating a community-driven book discovery platform.</p>
+                    <h3>Forkify</h3>
+                    <p>A full-stack React recipe application with search functionality, dynamic serving adjustments, bookmarking system, theme switching, and support for custom & Indian home recipes.</p>
                     <div class="project-links">
-                        <a href="javascript:void(0)" class="project-link">React Native</a>
-                        <a href="javascript:void(0)" class="project-link">Expo</a>
-                        <a href="javascript:void(0)" class="project-link">Mobile App</a>
+                        <a href="javascript:void(0)" class="project-link">React.js</a>
+                        <a href="javascript:void(0)" class="project-link">JavaScript</a>
+                        <a href="javascript:void(0)" class="project-link">API Integration</a>
+                        <a href="javascript:void(0)" class="project-link">Local Storage</a>
+                    </div>
+                    <div class="project-main-links">
+                        <a href="https://rishabhart.github.io/Forkify/" target="_blank" class="main-link">🔗 Live Demo</a>
+                        <a href="https://github.com/RishabhArt/Forkify" target="_blank" class="main-link">📁 GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-img">🗺️</div>
+                <div class="project-content">
+                    <h3>Mapty Workout Tracker</h3>
+                    <p>A web-based workout tracking application using JavaScript, Leaflet.js, HTML, and CSS that allows users to log running/cycling workouts on an interactive map with geolocation, data persistence, and dynamic UI updates.</p>
+                    <div class="project-links">
+                        <a href="javascript:void(0)" class="project-link">JavaScript</a>
+                        <a href="javascript:void(0)" class="project-link">Leaflet.js</a>
+                        <a href="javascript:void(0)" class="project-link">HTML/CSS</a>
+                        <a href="javascript:void(0)" class="project-link">Geolocation API</a>
+                    </div>
+                    <div class="project-main-links">
+                        <a href="https://rishabhart.github.io/Mapty/" target="_blank" class="main-link">🔗 Live Demo</a>
+                        <a href="https://github.com/RishabhArt/Mapty/tree/main" target="_blank" class="main-link">📁 GitHub</a>
                     </div>
                 </div>
             </div>
@@ -586,19 +644,21 @@
         <h2>Certifications</h2>
         <div class="certifications-grid">
             <div class="cert-card">
-                <div class="cert-icon">🏆</div>
+                <div class="cert-icon">🐍</div>
+                <div class="cert-content">
+                    <h3>Python Bootcamp</h3>
+                    <p class="cert-date">September 2024</p>
+                    <p>Completed a comprehensive Python programming course covering core concepts, data structures, object-oriented programming, file handling, libraries (Django, NumPy, Pandas), and real-world project development.</p>
+                    <a href="https://drive.google.com/file/d/14LCtHZJLnZOxXew_xH_6h232N4NACH9y/view?usp=sharing" target="_blank" class="cert-link">📝 View Certificate</a>
+                </div>
+            </div>
+            <div class="cert-card">
+                <div class="cert-icon">⚡</div>
                 <div class="cert-content">
                     <h3>Data Structures and Algorithms (C++)</h3>
                     <p class="cert-date">April 2025</p>
                     <p>Mastered core data structures including arrays, linked lists, stacks, and queues in C++. Implemented various algorithms such as sorting (quick, merge, and bubble) and searching (binary and linear) to optimize performance.</p>
-                </div>
-            </div>
-            <div class="cert-card">
-                <div class="cert-icon">☁️</div>
-                <div class="cert-content">
-                    <h3>DevOps (Git, Version Control, AWS, Docker, Jenkins, Maven)</h3>
-                    <p class="cert-date">June 2025</p>
-                    <p>Understand how various technologies work together in DevOps & GitOps. AWS, Linux, Scripting, Jenkins, Github Actions, Ansible, Docker, Kubernetes, Terraform & many more.</p>
+                    <a href="https://drive.google.com/file/d/1OY150jEaPzbuvm1xytTD52s9pOCVhYEN/view?usp=sharing" target="_blank" class="cert-link">📝 View Certificate</a>
                 </div>
             </div>
         </div>
@@ -614,7 +674,11 @@
             </div>
             <div class="contact-item">
                 <h3>GitHub</h3>
-                <a href="javascript:void(0)">github.com/RishabhArt</a>
+                <a href="https://github.com/RishabhArt" target="_blank">github.com/RishabhArt</a>
+            </div>
+            <div class="contact-item">
+                <h3>LeetCode</h3>
+                <a href="https://leetcode.com/u/0cZJpLzG8U/" target="_blank">leetcode.com/u/0cZJpLzG8U/</a>
             </div>
         </div>
     </section>
@@ -687,7 +751,7 @@
         window.addEventListener('load', createParticles);
 
         // Dynamic typing effect for hero section
-        const text = "Full Stack Developer & Software Developer";
+        const text = "Software Developer | Full-stack Web Developer";
         const heroText = document.querySelector('.hero-content p');
         let index = 0;
 
